@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BT03-07-EDXWebHosting</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">  
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+                  data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">EDX Hosting</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="domains.html">Domains</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <!-- opens modal window -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Login</h4>
+          </div>		  
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label>Email address</label>
+                <input type="email" class="form-control" placeholder="Enter Email">
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" placeholder="Enter Password">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>	
+        </div>
+      </div>
+    </div>
+    <section class="jumbotron">
+      <div class="container">
+        <h2><span class="fa fa-phone"></span> Contact Us Today</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris 
+        	convallis nulla tortor, at iaculis ligula viverra nec. Integer id 
+        	consequat ante. Etiam in ante vitae dolor auctor sagittis.</p>
+      </div>
+    </section>  <!-- end of jumbotron -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+			<div id="mapholder">
+			</div>
+          </div>
+        </div>
+      </div>
+    </section>  <!-- end of Google map -->
+    <section id="contact-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" placeholder="Enter name" />
+                  </div>
+                  <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" class="form-control" placeholder="Enter email" />
+                  </div>
+                  <div class="form-group">
+                    <label>Message</label>
+                    <textarea class="form-control" placeholder="Enter message"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to Top</a></p>
+        <p>Copyright &copy; 2016-2018 EDX Hosting&nbsp;&middot;
+          <a href="#">Privacy</a>&nbsp;&middot;
+          <a href="#">Terms</a>
+        </p>
+      </div>
+    </footer>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>    
+    <!-- following 2 script sections copied from w3schools.com -->
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script>
+			showPosition();
+			function showPosition(position) {
+				latlon = new google.maps.LatLng(36.125955, -115.196116);
+				mapholder = document.getElementById('mapholder');
+				mapholder.style.height = '300px';
+				mapholder.style.width = '450px';
+				var myOptions = {
+					center:latlon,zoom:14,
+					mapTypeId:google.maps.MapTypeId.ROADMAP,
+					mapTypeControl:false,
+					navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+				}
+				var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
+				var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+			}
+    </script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BT03-06 Users</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- navbar from Bootswatch.com Cerulean theme -->    
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+                  data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="#">Alpha CMS</a>
+	    	</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Dashboard <span class="sr-only">(current)</span></a>
+						</li>
+						<li><a href="pages.html">Pages</a></li>
+						<li><a href="categories.html">Categories</a></li>
+						<li class="active"><a href="users.html">Users</a></li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control search-form" placeholder="Search">
+						</div>
+					</form>					
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+								My Account&nbsp;&nbsp;<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Profile</a></li>
+							</ul>
+						</li>
+						<li><a href="login.html">Logout</a></li>
+					</ul>
+				</div>
+	  	</div>
+		</nav>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <!-- listgroup copied from BS site -->
+            <div class="list-group">
+							<a href="index.html" class="list-group-item">
+							<span class="glyphicon glyphicon-dashboard">&nbsp;&nbsp;</span>Dashboard
+							</a>
+							<a href="pages.html" class="list-group-item">
+								<span class="glyphicon glyphicon-file">&nbsp;&nbsp;</span>Pages</a>
+							<a href="categories.html" class="list-group-item">
+								<span class="glyphicon glyphicon-folder-open">&nbsp;&nbsp;Categories
+								</span></a>
+							<a href="users.html" class="list-group-item active">
+								<span class="glyphicon glyphicon-user">&nbsp;&nbsp;</span>User Accounts
+							</a>
+						</div>
+          </div>  <!-- / col-md-4 -->
+          <div class="col-md-8">
+            <!-- heading and 3 buttons -->
+						<div class="row">
+							<div class="col-md-6">
+								<h1 class="page-header"><span class="glyphicon glyphicon-user">&nbsp;</span>User Accounts</h1>
+							</div>
+							<div class="col-md-6">
+								<div class="btn-group actions" role="group" aria-label="...">
+									<a href="#" type="button" class="btn btn-success">
+									<span class="glyphicon glyphicon-plus">&nbsp;</span>
+									New</a>
+									<a href="#" type="button" class="btn btn-success">
+										<span class="glyphicon glyphicon-pencil">&nbsp;</span>
+										Edit</a>
+									<a href="#" type="button" class="btn btn-success">
+									<span class="glyphicon glyphicon-remove">&nbsp;</span>
+									Delete</a>
+								</div>
+							</div>
+						</div>
+      			<!-- breadcrumbs from BS site -->
+            <ol class="breadcrumb">
+							<li><a href="index.html">Dashboard</a></li>
+							<li class="active">Users</li>
+						</ol>            
+            <table id="sort-table" class="table table-striped tablesorter">
+              <thead>
+								<tr>
+									<th><input type="checkbox"></th>
+									<th>Full Name</th>
+									<th>Email</th>
+									<th>Group</th>
+								</tr>
+						  </thead>
+						  <tbody>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td><a href="user.html">Auston Matthews</a></td>
+									<td>am@example.com</td>
+									<td>Admin</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td><a href="user.html">Mitchell Marner</a></td>
+									<td>mm@example.com</td>
+									<td>Admin</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td><a href="user.html">William Nylander</a></td>
+									<td>wn@example.com</td>
+									<td>Admin</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>    
+									<td><a href="user.html">Nazem Kadri</a></td>
+									<td>nk@example.com</td>
+									<td>Admin</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>    
+									<td><a href="user.html">Frederik Andersen</a></td>
+									<td>fa@example.com</td>
+									<td>Admin</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>    
+									<td><a href="user.html">Morgan Reilly</a></td>
+									<td>mr@example.com</td>
+									<td>Registered</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>    
+									<td><a href="user.html">James van Riemsdyk</a></td>
+									<td>jvr@example.com</td>
+									<td>Registered</td>
+								</tr>
+			  			</tbody>
+            </table>
+            <!-- pagination from BS site -->
+            <nav>
+							<ul class="pagination">
+								<li>
+									<a href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+									</a>
+								</li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li>
+									<a href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+            <hr />
+          </div>  <!-- / col-md-8 -->
+        </div>  <!-- / row -->
+      </div>  <!-- /container -->
+    </section>
+    <footer>
+      <p>Copyright &copy; 2015-2018 Alpha CMS.</p>
+    </footer>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/jquery.tablesorter.js"></script>  <!-- from tablesorter.com -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

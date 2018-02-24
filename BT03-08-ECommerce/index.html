@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BT03-08-ECommerce</title>
+    <link href="http://fonts.googleapis.com/css?family=Oswald:700" 
+          rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <h1 class="logo"><span class="glyphicon glyphicon-tag"></span>
+                &nbsp;My<span class="primary">Store</span></h1>
+            <p class="subtext">Bootstrap e-Commerce Template</p>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <!-- inline form copied from BS site -->
+            <form class="form-inline">
+              <div class="form-group">
+                <label>Email:&nbsp;</label>
+                <input type="email" class="form-control" placeholder="Enter Email">
+              </div>
+              <div class="form-group">
+                <label>Password:&nbsp;</label>
+                <input type="password" class="form-control" placeholder="Enter Password">
+              </div>
+              <button type="submit" class="btn btn-default">Login</button>
+            </form>
+          </div>
+        </div>
+      </header>
+      <!-- Static navbar coped from BS site navbar example -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="#">What's New</a></li>
+              <li><a href="#">Specials</a></li>
+              <li><a href="#">My Account</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <form class="navbar-form">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search..." />
+                </div>
+                <button type="submit" class="btn btn-default">Search</button>
+              </form>
+            </ul>
+          </div>  <!--/.nav-collapse -->
+        </div>  <!--/.container-fluid -->
+      </nav>
+      <!-- Tabs in jumbotron copied from BS site -->
+      <div class="jumbotron">
+        <!-- Nav tabs -->
+        <ul class="tablist" role="tablist">
+          <li role="presentation" class="active">
+          <a href="#featured" aria-controls="featured" role="tab" data-toggle="tab">
+          Featured Item</a>
+          </li>
+          <li role="presentation">
+          <a href="#best" aria-controls="best" role="tab" data-toggle="tab">
+          Best Seller</a>
+          </li>
+          <li role="presentation">
+          <a href="#discount" aria-controls="discount" role="tab" data-toggle="tab">
+          Summer Discount</a>
+          </li>
+          <li role="presentation">
+          <a href="#premium" aria-controls="premium" role="tab" data-toggle="tab">
+          Premium Product</a>
+          </li>
+          <li role="presentation">
+          <a href="#gift" aria-controls="gift" role="tab" data-toggle="tab">
+          Gift Idea</a>
+          </li>
+        </ul>
+		    <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="featured">
+          <div class="tab-text">
+            <h2>Apple iPhone 6</h2>
+            <p>asdfklj adlsjf alkjdfsa al daslkjd flkasjdlak adslk alskjf lkj.</p>
+            <a href="product.html" class="btn btn-default">Read More</a>
+          </div>
+          <img class="slide-img" src="img/iphone.png" />
+          </div>
+          <div role="tabpanel" class="tab-pane" id="best">
+          <div class="tab-text">
+            <h2>Xbox One</h2>
+            <p>asdfklj adlsjf alkjdfsa al daslkjd flkasjdlak adslk alskjf lkj.</p>
+            <a href="product.html" class="btn btn-default">Read More</a>
+          </div>
+          <img class="slide-img" src="img/xbox.png" />
+          </div>
+          <div role="tabpanel" class="tab-pane" id="discount">
+          <div class="tab-text">
+            <h2>PlayStation 4</h2>
+            <p>asdfklj adlsjf alkjdfsa al daslkjd flkasjdlak adslk alskjf lkj.</p>
+            <a href="product.html" class="btn btn-default">Read More</a>
+          </div>
+          <img class="slide-img" src="img/ps4.png" />
+          </div>
+          <div role="tabpanel" class="tab-pane" id="premium">
+          <div class="tab-text">
+            <h2>Microsoft Surface 3</h2>
+            <p>asdfklj adlsjf alkjdfsa al daslkjd flkasjdlak adslk alskjf lkj.</p>
+            <a href="product.html" class="btn btn-default">Read More</a>
+          </div>
+          <img class="slide-img" src="img/surface.png" />
+          </div>
+          <div role="tabpanel" class="tab-pane" id="gift">
+          <div class="tab-text">
+            <h2>Vizio Smart TV</h2>
+            <p>asdfklj adlsjf alkjdfsa al daslkjd flkasjdlak adslk alskjf lkj.</p>
+            <a href="product.html" class="btn btn-default">Read More</a>
+          </div>
+          <img class="slide-img" src="img/tv.png" />
+          </div>
+        </div>
+      </div>  <!-- end of jumbotron -->
+      <section id="products">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="img/s5.png" />
+              <div class="caption">
+                <h4 class="pull-right">$699.99</h4>
+                <h4><a href="product.html">Samsung Galaxy S5</a></h4>
+                <p>Paragraph describing Samsung Galaxy S5. Af dadjl salkj fd sadkdf
+                   asldkj asldkj dslaj lsadk sadlkj dslkjsa sadlkj dsfklj.</p>
+              </div>
+              <div class="ratings">
+                <p class="pull-right">115 Reviews</p>
+                <p><span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star">
+                </p>
+              </div>
+            </div>  
+          </div>  <!-- end of 1st column -->
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="img/xbox.png" />
+              <div class="caption">
+                <h4 class="pull-right">$399.99</h4>
+                <h4><a href="product.html">Microsoft Xbox One</a></h4>
+                <p>Paragraph describing Microsoft Xbox One. Af dadjl salkj fd sadkdf
+                   asldkj asldkj dslaj lsadk sadlkj dslkjsa sadlkj dsfklj.</p>
+              </div>
+              <div class="ratings">
+                <p class="pull-right">37 Reviews</p>
+                <p><span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star-empty">
+                </p>
+              </div>
+            </div>            
+          </div>  <!-- end of 2nd column -->
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="img/ps4.png" />
+              <div class="caption">
+                <h4 class="pull-right">$499.99</h4>
+                <h4><a href="product.html">Sony PlayStation 4</a></h4>
+                <p>Paragraph describing Sony PlayStation 4. Af dadjl salkj fd sadkdf
+                   asldkj asldkj dslaj lsadk sadlkj dslkjsa sadlkj dsfklj.</p>
+              </div>
+              <div class="ratings">
+                <p class="pull-right">45 Reviews</p>
+                <p><span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star">
+                </p>
+              </div>
+            </div>  
+          </div>  <!-- end of 3rd column -->
+        </div>  <!-- end of row 1 -->        
+        <div class="row">
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="img/tv.png" />
+              <div class="caption">
+                <h4 class="pull-right">$279.99</h4>
+                <h4><a href="product.html">Vizio Smart TV</a></h4>
+                <p>Paragraph describing Vizio Smart TV. Af dadjl salkj fd sadkdf
+                   asldkj asldkj dslaj lsadk sadlkj dslkjsa sadlkj dsfklj.</p>
+              </div>
+              <div class="ratings">
+                <p class="pull-right">213 Reviews</p>
+                <p><span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star-empty">
+                  <span class="glyphicon glyphicon-star-empty">
+                </p>
+              </div>
+            </div>  
+          </div>  <!-- end of 1st column -->          
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="img/surface.png" />
+              <div class="caption">
+                <h4 class="pull-right">$899.99</h4>
+                <h4><a href="product.html">Microsoft Surface 3</a></h4>
+                <p>Paragraph describing Microsoft Surface 3 tablet. Af dadjl salkj fd 
+                   sadkdf asldkj asldkj dslaj lsadk sadlkj dslkjsa sadlkj dsfklj.</p>
+              </div>
+              <div class="ratings">
+                <p class="pull-right">49 Reviews</p>
+                <p><span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star-empty">
+                </p>
+              </div>
+            </div>            
+          </div>  <!-- end of 2nd column -->
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="img/ipad.png" />
+              <div class="caption">
+                <h4 class="pull-right">$599.99</h4>
+                <h4><a href="product.html">Apple iPad</a></h4>
+                <p>Paragraph describing Apple iPad. Af dadjl salkj fd sadkdf
+                   asldkj asldkj dslaj lsadk sadlkj dslkjsa sadlkj dsfklj.</p>
+              </div>
+              <div class="ratings">
+                <p class="pull-right">45 Reviews</p>
+                <p><span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star">
+                  <span class="glyphicon glyphicon-star">
+                </p>
+              </div>
+            </div>  
+          </div>  <!-- end of 3rd column -->
+        </div>  <!-- end of row 2-->
+      </section>
+    </div> <!-- /container -->
+    <footer>
+      <p>Copyright &copy; 2015-2018 MyStore &middot 
+        <a href="#">Terms</a> &middot; 
+        <a href="#">Privacy</a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
